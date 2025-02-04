@@ -9,6 +9,6 @@ jobs:
     steps:
       - name: Connect to Remote machine & Create file
         run: |
-            sshpass -p "${{secrets.REMOTE_PASSWORD}}" ssh -o StrictHostKeyChecking=no ${{secerts.REMOTE_USER}}@${{secrets.REMOTE_HOST}} << EQF
+            sshpass -p "${{secrets.REMOTE_PASSWORD}}" ssh -o StrictHostKeyChecking=no ${{secrets.REMOTE_USER}}@${{secrets.REMOTE_HOST}} << EQF
             echo "FIle created successfully" > /home/ai/test.txt
             EQF
